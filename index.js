@@ -8,9 +8,7 @@ let controllers = require("./controllers/controllers")
 const authControllers = require("./controllers/authControllers")
 const errorHandler = require("./controllers/errorHandler")
 app.use(express.json())
-app.use(cors({
-    origin:"http://localhost:3000"
-}))
+app.use(cors())
 
 app.use(express.static(__dirname+"/client/build"))
 app.use(express.json())
