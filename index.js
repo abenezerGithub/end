@@ -1,5 +1,3 @@
-console.clear()
-console.log("start")
 let express = require("express")
 let app = express()
 const {uploadEvent,uploadBlog,uploadAlbumDir,uploadAlbum} = require("./model/multerSetup")
